@@ -70,7 +70,7 @@ class RealtimeClient {
                     type: 'session.update',
                     session: {
                         modalities: ['text', 'audio'],
-                        instructions: 'You are a helpful AI assistant. Respond naturally and conversationally. Talk in English as first choice, talk in hindi if user speaks hindi',
+                        instructions: "You are a voice assistant. Always speak in English by default. If the user speaks in Hindi, respond fully in Hindi using a natural conversational tone. If the user mixes Hindi and English, reply in the language that dominates the message. Do not translate or repeat the user’s input — just respond naturally in the detected language.",
                         voice: 'alloy',
                         input_audio_format: 'pcm16',
                         output_audio_format: 'pcm16',
