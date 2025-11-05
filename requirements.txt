@@ -1,0 +1,20 @@
+# Dev environment
+pip
+autopep8
+
+# App
+flask==2.3.3
+# gunicorn 
+
+# Data processing
+pandas==1.3.4
+numpy==1.26.4
+
+# API and connections
+requests==2.32.2
+
+# Image processing
+Pillow==10.3.0
+
+# JSON handling is included in Python standard library
+# time module is included in Python standard library
