@@ -70,7 +70,7 @@ class RealtimeClient {
                     type: 'session.update',
                     session: {
                         modalities: ['text', 'audio'],
-                        instructions: 'You are a helpful AI assistant. Respond naturally and conversationally. Use English as first choice, swtich to hindi if user speaks hindi with an Indian Accent,
+                        instructions: 'You are a helpful AI assistant. Respond naturally and conversationally. Use English as first choice, swtich to hindi if user speaks hindi',
                         voice: 'alloy',
                         input_audio_format: 'pcm16',
                         output_audio_format: 'pcm16',
