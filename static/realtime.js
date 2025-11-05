@@ -70,7 +70,7 @@ class RealtimeClient {
                     type: 'session.update',
                     session: {
                         modalities: ['text', 'audio'],
-                        instructions: 'You are a helpful AI assistant. Respond naturally and conversationally. Only English or Hindi',
+                        instructions: 'You are a helpful AI assistant. Respond naturally and conversationally. Use English as first choice, swtich to hindi if user speaks hindi with an Indian Accent,
                         voice: 'alloy',
                         input_audio_format: 'pcm16',
                         output_audio_format: 'pcm16',
@@ -356,6 +356,6 @@ document.getElementById('stopBtn').addEventListener('click', () => {
 
 // Initialize on load
 window.addEventListener('load', () => {
-    addMessage('system', 'Welcome! Configure your Azure OpenAI credentials in the .env file to get started.');
+    addMessage('system', 'Configuring .env');
 });
 
