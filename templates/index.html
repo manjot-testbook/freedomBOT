@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreedomBOT</title>
+    <title>FreedomBOT - Azure Realtime Speech</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to FreedomBOT + Local</h1>
-        <p>Your Flask application is running successfully!</p>
+        <h1>🎤 FreedomBOT - Realtime Speech</h1>
+        <p class="subtitle">Speech-to-Speech AI powered by Azure GPT Realtime API</p>
+
+        <div class="control-panel">
+            <button id="startBtn" class="btn btn-primary">
+                <span class="btn-icon">🎙️</span>
+                Start Conversation
+            </button>
+            <button id="stopBtn" class="btn btn-danger" disabled>
+                <span class="btn-icon">⏹️</span>
+                Stop Conversation
+            </button>
+        </div>
+
+        <div class="status-panel">
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span id="statusText">Ready to connect</span>
+            </div>
+            <div class="info-text" id="infoText">
+                Click "Start Conversation" to begin speaking with the AI
+            </div>
+        </div>
+
+        <div class="conversation-panel">
+            <h3>Conversation Log</h3>
+            <div class="messages" id="messages">
+                <!-- Messages will appear here -->
+            </div>
+        </div>
+
+        <div class="audio-controls">
+            <audio id="audioPlayer" autoplay></audio>
+        </div>
     </div>
+
+    <script src="{{ url_for('static', filename='realtime.js') }}"></script>
 </body>
 </html>
